@@ -50,7 +50,7 @@ public class ChainStorage {
 
     public boolean isThereThisChainInFuture(Chain chain) {
         boolean ans = false;
-        for (Chain ch: current) {
+        for (Chain ch: future) {
             ans = ans || chain.equals(ch);
         }
         return ans;
